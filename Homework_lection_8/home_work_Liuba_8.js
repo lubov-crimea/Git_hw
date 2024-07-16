@@ -243,7 +243,7 @@ const enterprises = [
             console.log(findEnterprise);
         }
         else {
-            console.log("Предприятие с таким id не найдено");} */
+            throw new Error ("Предприятие с таким id не найдено");} */
 
 //             function deleteEnterprise(id){
 //             const findEnterprise = enterprises.findIndex(ent => ent.id === id);
@@ -285,7 +285,6 @@ const enterprises = [
 // function moveEmployees(idStart, idFinish){
 //     for (const enterprise of enterprises) {
 //         const findDepartmentIdStart = enterprise.departments.find(dep => dep.id === idStart);
-//         console.log
 //         const findDepartmentIdFinish = enterprise.departments.find(dep => dep.id === idFinish);
 //     if (findDepartmentIdStart&&findDepartmentIdFinish) {
 //         console.log (findDepartmentIdStart, findDepartmentIdFinish);
